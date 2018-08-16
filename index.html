@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="MsgSent">Message sent successfully</div>
+        <div id = "mainForm">
+            <form id = "contactForm">
+                <label>Email : </label><br>
+                <input id="email" type="email"><br>
+                <label>Name : </label><br>
+                <input id="Name" type="text"><br>
+                <label>Message : </label> <br>
+                <textarea id= "msg" type = "text"></textarea> <br>
+                <button name="Submit" type="submit">Submit</button>     
+            </form>
+        </div>
+       
+    </body>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDOhEWXB5WQdjUEoP1dj4eU5bNZAmyZEYc",
+        authDomain: "memeland-10fd8.firebaseapp.com",
+        databaseURL: "https://memeland-10fd8.firebaseio.com",
+        projectId: "memeland-10fd8",
+        storageBucket: "memeland-10fd8.appspot.com",
+        messagingSenderId: "92649519184"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="contact.js"></script>
+
+</html>
